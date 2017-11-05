@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/colorPrimary">
+
+                <com.fzu2015.classmate_book.view.CircleImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="@dimen/custom_dp_80"
+                    android:layout_height="@dimen/custom_dp_80"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_marginTop="@dimen/custom_dp_20"
+                    android:src="@color/colorGray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="@dimen/custom_dp_50"
+                    android:id="@+id/name"
+                    android:text="ABC"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="@dimen/custom_dp_20"
+                    android:id="@+id/personality"
+                    android:text="这个人很懒嗯..."
+                    android:textColor="@color/colorGray"
+                    android:textSize="16dp" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- 在这里写个人信息 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/custom_dp_50"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/custom_dp_50"
+                        android:gravity="center_vertical"
+                        android:text="电话"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/custom_dp_50"
+                        android:gravity="center_vertical"
+                        android:text="13215003601"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp"
+                        android:id="@+id/phone"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/custom_dp_50"
+                    android:orientation="horizontal"
+                    android:background="@color/colorPrimary50"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/custom_dp_50"
+                        android:gravity="center_vertical"
+                        android:text="住址"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/custom_dp_50"
+                        android:gravity="center_vertical"
+                        android:text="ABCD"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp"
+                        android:id="@+id/address"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/custom_dp_50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/custom_dp_50"
+                        android:gravity="center_vertical"
+                        android:text="邮箱"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/custom_dp_50"
+                        android:gravity="center_vertical"
+                        android:text="123456789@qq.com"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp"
+                        android:id="@+id/email"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/custom_dp_50"
+                    android:orientation="horizontal"
+                    android:background="@color/colorPrimary50"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/custom_dp_50"
+                        android:gravity="center_vertical"
+                        android:text="微信"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/custom_dp_50"
+                        android:gravity="center_vertical"
+                        android:text="13215003601"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp"
+                        android:id="@+id/wechat"
+                        />
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/custom_dp_50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/custom_dp_50"
+                        android:gravity="center_vertical"
+                        android:text="QQ"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/qq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="63dp"
+                        android:gravity="center_vertical"
+                        android:text="13215003601"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/destroy"
+                android:text="删除本用户"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>
